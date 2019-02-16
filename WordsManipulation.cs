@@ -7,6 +7,14 @@ namespace PadawansTask8
     {
         public static void RemoveDuplicateWords(ref string text)
         {
+            if(text==null)
+            {
+                throw new ArgumentNullException();
+            }
+            if(text.Length==0)
+            {
+                throw new ArgumentException();
+            }
             string[] Firstwords = text.Split(new char[] { ' ', ',', '.', '!', '?', '-', ':', ';' });
             int flag = Firstwords.Length;
             string[] newText = new string[flag];
