@@ -11,7 +11,7 @@ namespace PadawansTask8.Tests
             string actual = "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta";
 
             string expected = "alpha beta  gamma   delta       ";
-
+            //string expected = "alpha beta  gamma   delta        ";
             WordsManipulation.RemoveDuplicateWords(ref actual);
 
             Assert.AreEqual(expected, actual);
